@@ -1,0 +1,121 @@
+.container {
+    margin-top: 100px;
+}
+
+.home {
+    padding-top: 10%;
+}
+
+.aboutus,
+.gallery,
+.contact {
+    padding-top: 15%;
+}
+
+.aboutus {
+    > .card-columns {
+        > .card {
+            > .card-body {
+                & {
+                    color: $white;
+                }
+                > .card-title {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+
+                > .card-content {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    .email-link {
+        color: $black;
+        text-decoration: underline;
+    }
+}
+
+.card {
+    &.-home {
+        background: rgba(255, 255, 255, 0.3);
+
+        > .card-body {
+            > .card-title {
+                font-size: 5rem;
+                font-weight: 600;
+            }
+            > .card-text {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .card-text {
+        font-family: "Kaushan Script", helvetica;
+    }
+}
+
+.list-inline {
+    & {
+        margin-top: 25px;
+    }
+    .list-item {
+        margin: 5px 0px;
+    }
+}
+
+.social-link {
+    &:hover {
+        text-decoration: none;
+
+        > .social-text {
+            background: #fafafa48;
+        }
+    }
+
+    > .social-image {
+        width: 50px;
+    }
+
+    > .social-text {
+        color: $black;
+        margin-left: 10px;
+        background: $white;
+        padding: 5px;
+        width: 120px;
+        position: absolute;
+        text-align: center;
+        transition: 600ms;
+
+        // &::after,
+        // &::before {
+        //     right: 100%;
+        //     top: 50%;
+        //     border: solid transparent;
+        //     content: " ";
+        //     height: 0;
+        //     width: 0;
+        //     position: absolute;
+        //     pointer-events: none;
+        // }
+
+        // &::after {
+        //     border-color: $white;
+        //     border-right-color: $white;
+        //     border-width: 30px;
+        //     margin-top: -30px;
+        // }
+
+        // &::before {
+        //     border-color: $white;
+        //     border-right-color: $white;
+        //     border-width: 36px;
+        //     margin-top: -36px;
+        // }
+    }
+}

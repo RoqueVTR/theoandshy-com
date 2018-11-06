@@ -1,0 +1,24 @@
+.footer {
+    background-color: #010f2c;
+    margin-top: 0;
+    color: $white;
+
+    > .container {
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+}
+
+.footer-title {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.footer-content {
+    font-weight: 400;
+    padding-left: 0px;
+}
+
+.footer-link {
+    color: $white;
+}
