@@ -23,23 +23,16 @@ $(function() {
 
     $(document).on("scroll", function(event) {
         var scrollPos = $(document).scrollTop();
-
-        if (scrollPos >= 10) {
-            $(".navbar").animate(
-                {
-                    backgroundColor: "#fafafa",
-                    boxShadow: "0px 0px 15px 0px rgba(0,0,0,0.2)"
-                },
-                "slow"
-            );
+        if (scrollY >= 30) {
+            $(".navbar").css({
+                backgroundColor: "#fafafa",
+                boxShadow: "0px 0px 15px 0px rgba(0,0,0,0.2)"
+            });
         } else {
-            $(".navbar").animate(
-                {
-                    backgroundColor: "transparent",
-                    boxShadow: "none"
-                },
-                "slow"
-            );
+            $(".navbar").css({
+                backgroundColor: "transparent",
+                boxShadow: "none"
+            });
         }
 
         $(".navbar-nav li a").each(function() {
@@ -51,6 +44,24 @@ $(function() {
             ) {
                 $(".navbar-nav li").removeClass("active");
                 currLink.closest("li").addClass("active");
+
+                if (currLink.attr("href") == "#contact") {
+                    $("html, body").css({
+                        background:
+                            "url('/img/bg_2.jpg') no-repeat center center fixed",
+                        "background-position-y": "-280px",
+                        "background-position-x": "right",
+                        "background-size": "cover"
+                    });
+                } else if (currLink.attr("href") == "#timeline") {
+                    $("html, body").css({
+                        background:
+                            "url('/img/bg.jpg') no-repeat center center fixed",
+                        "background-position-y": "-70px",
+                        "background-position-x": "right",
+                        "background-size": "cover"
+                    });
+                }
             } else {
                 currLink.closest("li").removeClass("active");
             }

@@ -1,0 +1,128 @@
+.timeline {
+    > .card-columns {
+        & {
+            -webkit-column-gap: 0px;
+            column-gap: 0px;
+            box-shadow: 0px -10px 15px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        > .card {
+            box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.1);
+            margin: 0px;
+            border-radius: 0px;
+
+            .card-img-wrap {
+                overflow: hidden;
+                position: relative;
+            }
+            .card-img-wrap:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                font-family: $font-family-sans-serif;
+                color: $white;
+                text-align: center;
+                font-size: 24px;
+                margin: auto;
+                opacity: 0;
+                transition: opacity 0.25s;
+            }
+            .card-img-wrap img {
+                transition: transform 2s;
+                width: 100%;
+            }
+            .card-img-wrap:hover img {
+                transform: scale(1.2);
+                cursor: pointer;
+            }
+            .card-img-wrap:hover:after {
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.btn-timeline {
+    font-family: "Kaushan Script", helvetica;
+    position: relative;
+    display: block;
+    height: 55px;
+    width: 500px;
+    margin: 50px auto;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: $black;
+    border: 2px $black solid;
+    border-radius: 4px;
+    outline: 0;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    -ms-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    -webkit-transition: 0.5s ease-in;
+
+    &.slide:after {
+        content: "Wanna see more?";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        padding: 5px;
+        text-align: center;
+        -webkit-transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &.slide:before {
+        content: "Go to our Youtube Channel →";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        color: $white;
+        left: -100%;
+        top: 0;
+        padding: 5px;
+        opacity: 0;
+        text-align: right;
+        -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &.slide:hover {
+        background: $red;
+        border: 2px $white solid;
+    }
+
+    &.slide:hover:before {
+        left: 0;
+        opacity: 1;
+        color: $white;
+    }
+    &.slide:hover:after {
+        left: 100%;
+        opacity: 0;
+    }
+
+    &.slide.left:hover {
+        background: none;
+    }
+
+    &.slide.left:before {
+        left: 100%;
+        color: $white;
+        -webkit-transition: all 425ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &.slide.left:hover:before {
+        left: 0;
+    }
+}

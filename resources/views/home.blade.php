@@ -1,4 +1,4 @@
-<section id="home" class="container half-quarter-height">
+<section id="home" class="container -home">
 
     <div class="home">
         <div class="card-group">

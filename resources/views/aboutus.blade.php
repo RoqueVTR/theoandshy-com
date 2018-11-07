@@ -1,4 +1,4 @@
-<section id="aboutus" class="container full-half-height">
+<section id="aboutus" class="container -aboutus">
 
     <div class="aboutus">
         <div class="card-columns">
@@ -91,6 +91,4 @@
             </div>
         </div>
     </div>
-    
-
 </section>

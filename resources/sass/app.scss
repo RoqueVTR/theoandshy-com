@@ -5,12 +5,13 @@
 
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
-
 @import "~jquery-ui/themes/base/all.css";
+
 // Components
 @import "./components/navbar";
 @import "./components/footer";
 @import "./components/pages";
+@import "./components/timeline";
 
 .navbar-laravel {
     background-color: #fff;
@@ -28,38 +29,11 @@ body {
     font-weight: 200;
     height: 100vh;
     margin: 0;
+    transition: 1000ms ease;
 }
 
 ul {
     list-style: none;
-}
-
-.double-height {
-    height: 200vh;
-}
-
-.full-half-height {
-    height: 150vh;
-}
-
-.full-quarter-height {
-    height: 125vh;
-}
-
-.full-height {
-    height: 100vh;
-}
-
-.half-quarter-height {
-    height: 75vh;
-}
-
-.half-height {
-    height: 50vh;
-}
-
-.quarter-height {
-    height: 25vh;
 }
 
 .blue {
@@ -92,6 +66,12 @@ ul {
 
 .blue-sky-dark {
     background: $blue-sky-dark;
+}
+
+.title-font,
+.card-title {
+    font-family: "Kaushan Script", helvetica;
+    font-weight: 400;
 }
 
 .flex-center {

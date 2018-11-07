@@ -1,11 +1,10 @@
-<section id="contact" class="container half-quarter-height">
+<section id="contact" class="container -contact">
 
     <div class="contact">
-        
-        <div class="col-sm-5 offset-sm-7">
-            <h5 class="text-left">Follow us on social media</h5>
+        <div class="card col-sm-5 -contact">
+            <h3 class="text-left title-font">Follow us on social media</h3>
             <hr/>
-            <h4 class="text-left">/theoandshy</h4>
+            <h3 class="text-left">@theoandshy</h3>
             <ul class="list-inline">
                 <div class="row">
                 <li class="list-item col-sm-6">
@@ -34,7 +33,7 @@
                 
             </ul>
 
-            <h6 class="text-left">We also do event singing, you may contact us at <a href="mailto:theoandshy01@gmail.com" class="email-link">theoandshy01@gmail.com</a></h6>
+            <p class="text-left">We also do event singing, you may contact us at <a href="mailto:theoandshy01@gmail.com" class="email-link">theoandshy01@gmail.com</a></p>
         </div>
 
     </div>

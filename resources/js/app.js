@@ -6,11 +6,10 @@
 
 require("./bootstrap");
 require("./underscore.min");
-
 require("./jquery.easing.min");
 require("./scrolling-nav");
 const WOW = require("wowjs");
-require("jquery-ui");
+require("jquery-ui-dist/jquery-ui.min");
 require("@fortawesome/fontawesome-free/js/all.min");
 
 $.ajaxSetup({

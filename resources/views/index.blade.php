@@ -17,7 +17,7 @@
         <!-- Content -->
         @include('home')
         @include('aboutus')
-        @include('gallery')
+        @include('timeline')
         @include('contact')
     
         <!-- Footer -->

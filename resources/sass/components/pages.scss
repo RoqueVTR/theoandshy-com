@@ -1,5 +1,24 @@
 .container {
     margin-top: 100px;
+
+    &.-home {
+        height: 75vh;
+    }
+
+    &.-aboutus {
+        height: 150vh;
+    }
+
+    &.-contact {
+        height: 75vh;
+    }
+}
+
+.container-fluid {
+    &.-timeline {
+        height: 200vh;
+        padding: 0px;
+    }
 }
 
 .home {
@@ -7,9 +26,12 @@
 }
 
 .aboutus,
-.gallery,
+.timeline {
+    padding-top: 80px;
+}
+
 .contact {
-    padding-top: 15%;
+    padding-top: 100px;
 }
 
 .aboutus {
@@ -55,27 +77,25 @@
         }
     }
 
+    &.-contact {
+        background: $white;
+        padding: 25px;
+    }
+
     .card-text {
         font-family: "Kaushan Script", helvetica;
     }
 }
 
 .list-inline {
-    & {
-        margin-top: 25px;
-    }
     .list-item {
-        margin: 5px 0px;
+        margin: 15px 0px;
     }
 }
 
 .social-link {
     &:hover {
         text-decoration: none;
-
-        > .social-text {
-            background: #fafafa48;
-        }
     }
 
     > .social-image {
@@ -84,10 +104,9 @@
 
     > .social-text {
         color: $black;
-        margin-left: 10px;
+        margin-top: 8px;
         background: $white;
         padding: 5px;
-        width: 120px;
         position: absolute;
         text-align: center;
         transition: 600ms;

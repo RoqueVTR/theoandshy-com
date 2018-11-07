@@ -2,12 +2,13 @@
 
 .navbar {
     & {
-        padding: 15px 15%;
-        height: 100px;
+        padding: 10px 15% 10px;
+        height: 70px;
+        transition: 500ms ease;
     }
     > .navbar-brand {
         > .navbar-logo {
-            width: 75px;
+            width: 60px;
         }
     }
     .navbar-nav {
@@ -16,15 +17,14 @@
         }
         > .nav-item {
             & {
-                transition-duration: 1000ms;
-                padding: 5px 25px;
+                padding: 15px 25px 10px;
                 margin: 0px 5px;
                 border-top-right-radius: 6px;
                 border-top-left-radius: 6px;
             }
 
             &.active {
-                border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+                border-bottom: 4px solid rgba(0, 0, 0, 0.3);
             }
             &:hover {
                 background: rgba(150, 150, 150, 0.1);
@@ -33,6 +33,7 @@
                 & {
                     font-weight: 400;
                     color: $black;
+                    font-size: 18px;
                 }
 
                 .soon {
