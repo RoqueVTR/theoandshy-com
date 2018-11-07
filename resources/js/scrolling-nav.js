@@ -47,19 +47,17 @@ $(function() {
 
                 if (currLink.attr("href") == "#contact") {
                     $("html, body").css({
-                        background:
-                            "url('/img/bg_2.jpg') no-repeat center center fixed",
-                        "background-position-y": "-280px",
-                        "background-position-x": "right",
-                        "background-size": "cover"
+                        background: "url('/img/bg_2.jpg') no-repeat fixed",
+                        "background-position-y": "85%",
+                        "background-position-x": "60%",
+                        "background-size": "140%"
                     });
                 } else if (currLink.attr("href") == "#timeline") {
                     $("html, body").css({
-                        background:
-                            "url('/img/bg.jpg') no-repeat center center fixed",
-                        "background-position-y": "-70px",
-                        "background-position-x": "right",
-                        "background-size": "cover"
+                        background: "url('/img/bg.jpg') no-repeat fixed",
+                        "background-position-y": "10%",
+                        "background-position-x": "50%",
+                        "background-size": "110%"
                     });
                 }
             } else {
